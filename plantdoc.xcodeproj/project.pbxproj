@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		528392352B86D7DE0008FE64 /* plantdocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528392342B86D7DE0008FE64 /* plantdocApp.swift */; };
-		528392372B86D7DE0008FE64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528392362B86D7DE0008FE64 /* ContentView.swift */; };
 		528392392B86D7E10008FE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528392382B86D7E10008FE64 /* Assets.xcassets */; };
 		5283923D2B86D7E10008FE64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5283923C2B86D7E10008FE64 /* Preview Assets.xcassets */; };
 		528392472B86D7E10008FE64 /* plantdocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528392462B86D7E10008FE64 /* plantdocTests.swift */; };
 		528392512B86D7E10008FE64 /* plantdocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528392502B86D7E10008FE64 /* plantdocUITests.swift */; };
 		528392532B86D7E10008FE64 /* plantdocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528392522B86D7E10008FE64 /* plantdocUITestsLaunchTests.swift */; };
+		528392602B86E0A90008FE64 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283925F2B86E0A90008FE64 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		528392312B86D7DE0008FE64 /* plantdoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plantdoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528392342B86D7DE0008FE64 /* plantdocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantdocApp.swift; sourceTree = "<group>"; };
-		528392362B86D7DE0008FE64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		528392382B86D7E10008FE64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5283923A2B86D7E10008FE64 /* plantdoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = plantdoc.entitlements; sourceTree = "<group>"; };
 		5283923C2B86D7E10008FE64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		5283924C2B86D7E10008FE64 /* plantdocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plantdocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		528392502B86D7E10008FE64 /* plantdocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantdocUITests.swift; sourceTree = "<group>"; };
 		528392522B86D7E10008FE64 /* plantdocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantdocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5283925F2B86E0A90008FE64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				528392342B86D7DE0008FE64 /* plantdocApp.swift */,
-				528392362B86D7DE0008FE64 /* ContentView.swift */,
 				528392382B86D7E10008FE64 /* Assets.xcassets */,
 				5283923A2B86D7E10008FE64 /* plantdoc.entitlements */,
 				5283923B2B86D7E10008FE64 /* Preview Content */,
+				5283925F2B86E0A90008FE64 /* LoginView.swift */,
 			);
 			path = plantdoc;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528392372B86D7DE0008FE64 /* ContentView.swift in Sources */,
+				528392602B86E0A90008FE64 /* LoginView.swift in Sources */,
 				528392352B86D7DE0008FE64 /* plantdocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
