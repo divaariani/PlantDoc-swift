@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class LoginViewController: UIViewController {
 
@@ -110,8 +111,18 @@ class LoginViewController: UIViewController {
         let imageName = passwordTextField.isSecureTextEntry ? "eye" : "eye.fill"
         passwordToggleVisibilityButton.setImage(UIImage(systemName: imageName), for: .normal)
     }
-
+    
     @objc func loginButtonTapped() {
         print("Button Login Tapped")
+
+        let hostingController = UIHostingController(rootView: ContentView())
+
+        let coordinator = Coordinator(parent: self)
+
+        hostingController.navigationController?.delegate = coordinator
+
+        let navigationController = UINavigationController(rootViewController: hostingController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
 }
