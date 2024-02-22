@@ -22,6 +22,6 @@ struct LoginView: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: LoginViewController, context: Context) {
-        // Update the view controller if needed
+        // Update the view controller
     }
 }

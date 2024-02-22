@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
 
     let logoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "logo") // Gantilah "logo" dengan nama gambar logo Anda
+        imageView.image = UIImage(named: "logo")
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
 
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Selamat Datang"
+        label.text = "PlantDoc"
         label.font = UIFont.boldSystemFont(ofSize: 24)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -53,13 +53,17 @@ class LoginViewController: UIViewController {
     }()
 
     let loginButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Login", for: .normal)
-        button.backgroundColor = UIColor.blue
-        button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
+            let button = UIButton()
+            button.setTitle("Login", for: .normal)
+            button.backgroundColor = UIColor(red: 0.8, green: 0.84, blue: 0.68, alpha: 1.0)
+            button.setTitleColor(UIColor.black, for: .normal)
+            button.layer.cornerRadius = 10
+            button.layer.borderWidth = 1
+            button.layer.borderColor = UIColor(red: 0.8, green: 0.84, blue: 0.68, alpha: 1.0).cgColor
+            button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            return button
+        }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,8 +98,9 @@ class LoginViewController: UIViewController {
             passwordToggleVisibilityButton.heightAnchor.constraint(equalToConstant: 24),
 
             loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
-            loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+                        loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                        loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                        loginButton.heightAnchor.constraint(equalToConstant: 40),
         ])
     }
 
@@ -107,7 +112,6 @@ class LoginViewController: UIViewController {
     }
 
     @objc func loginButtonTapped() {
-        // Implementasikan logika login di sini
         print("Button Login Tapped")
     }
 }
